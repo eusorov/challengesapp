@@ -2,11 +2,13 @@ import Image from "next/image";
 import { Hero } from "./components/sections/hero";
 import { CARDS } from "./cards";
 import { Features } from "./components/sections/features";
+import { JoinChallenges } from "./components/sections/joinchallenges";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-white px-4 py-24 dark:bg-gray-900">
       <Hero />
+      <JoinChallenges />
       <Features />
 
       <div className="relative flex w-full max-w-5xl flex-col items-center justify-center gap-12">
