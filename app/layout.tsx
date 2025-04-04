@@ -30,7 +30,7 @@ export default function RootLayout({
         <ThemeModeScript />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} center mx-auto max-w-4xl antialiased`}
       >
         <Flownavbar />
         {children}

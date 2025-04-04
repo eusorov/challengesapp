@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Hero } from "./components/sections/hero";
 
 export default function Home() {
   const CARDS = [
@@ -123,6 +124,8 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-white px-4 py-24 dark:bg-gray-900">
+      <Hero />
+
       <div className="relative flex w-full max-w-5xl flex-col items-center justify-center gap-12">
         <div className="relative flex flex-col items-center gap-6">
           <h1 className="relative text-center text-4xl leading-[125%] font-bold text-gray-900 dark:text-gray-200">

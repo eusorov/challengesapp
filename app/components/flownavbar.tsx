@@ -13,12 +13,13 @@ import {
   NavbarToggle,
 } from "flowbite-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function Flownavbar() {
   const homeLink = "/";
   const [activeLink, setActiveLink] = useState(homeLink);
   const [showProfile, setShowProfile] = useState(false); // State to toggle between button and Profile
+  const [showShadow, setShowShadow] = useState(false); // State to toggle shadow
 
   const handleLinkClick = (href: string) => {
     setActiveLink(href);
@@ -28,8 +29,32 @@ export function Flownavbar() {
     setShowProfile(!toggle);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setShowShadow(true);
+      } else {
+        setShowShadow(false);
+      }
+    };
+
+    // just trigger this so that the initial state
+    // is updated as soon as the component is mounted
+    // related: https://stackoverflow.com/a/63408216
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <Navbar fluid rounded>
+    <Navbar
+      fluid
+      rounded
+      className={`${showShadow ? "shadow-md" : ""} sticky top-0 z-10 w-full max-w-4xl bg-white dark:bg-gray-900`}
+    >
       <NavbarBrand
         as={Link}
         href={homeLink}
