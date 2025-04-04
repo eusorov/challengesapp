@@ -29,7 +29,10 @@ export const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+      <div
+        className="hidden w-full sm:relative sm:block"
+        style={{ paddingTop: "56.25%" }}
+      >
         <Image
           src="/people_running.webp"
           alt="people running"
