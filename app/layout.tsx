@@ -26,11 +26,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <ThemeModeScript />
-      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} center mx-auto max-w-4xl antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} center mx-auto max-w-6xl antialiased`}
       >
         <Flownavbar />
         {children}
