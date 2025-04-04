@@ -1,3 +1,4 @@
+import { Card } from "flowbite-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,6 +14,43 @@ export const JoinChallenges = () => {
             Unleash your competitive spirit by creating or joining challenges.
             Track your progress and inspire others along the way!
           </p>
+          <div className="my-8 sm:grid sm:grid-cols-2 sm:gap-6">
+            <div className="flex flex-1 flex-col items-start justify-center gap-1.5">
+              <Image
+                alt="Flowbite Pro logo"
+                src="/flowbite.svg"
+                width={36}
+                height={36}
+                className="my-2"
+              />
+              <div className="w-full font-sans text-lg leading-4 font-semibold text-gray-900 dark:text-gray-200">
+                Create Challenges
+              </div>
+
+              <div className="w-full font-sans text-sm leading-5 font-normal text-gray-500 dark:text-gray-400">
+                Easily set up public or private challenges with friends and
+                family
+              </div>
+            </div>
+            <div className="flex flex-1 flex-col items-start justify-center gap-1.5">
+              <Image
+                alt="Flowbite Pro logo"
+                src="/flowbite.svg"
+                width={36}
+                height={36}
+                className="my-2"
+              />
+              <div className="w-full font-sans text-lg leading-4 font-semibold text-gray-900 dark:text-gray-200">
+                Track Progress
+              </div>
+
+              <div className="w-full font-sans text-sm leading-5 font-normal text-gray-500 dark:text-gray-400">
+                Monitor your achievements and stay motivated with real-time
+                updates.
+              </div>
+            </div>
+          </div>
+
           <Link
             href="#"
             className="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900 mr-3 inline-flex items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white focus:ring-4"
@@ -38,16 +76,18 @@ export const JoinChallenges = () => {
             Learn More
           </Link>
         </div>
-        <div className="hidden md:col-span-5 md:mt-0 md:flex">
+        <div className="md:align-center hidden md:col-span-5 md:mt-0 md:flex md:justify-center">
           <Image
             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
             alt="people running"
-            layout="relative"
-            width={300}
-            height={300}
+            layout="responsive"
+            width={500}
+            height={200}
+            objectPosition="center"
             placeholder="blur"
             blurDataURL="/pattern-light.svg"
           />
+          <div className="md:relative" style={{ paddingTop: "56.25%" }}></div>
         </div>
       </div>
     </section>
