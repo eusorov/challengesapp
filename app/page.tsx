@@ -3,13 +3,16 @@ import { Hero } from "./components/sections/hero";
 import { CARDS } from "./cards";
 import { Features } from "./components/sections/features";
 import { JoinChallenges } from "./components/sections/joinchallenges";
+import { ListChallenges } from "./components/sections/listchallenges";
+import { JoinChallengesGpt } from "./components/sections/joinchallengesGpt";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-white px-4 py-24 dark:bg-gray-900">
       <Hero />
       <JoinChallenges />
-      <Features />
+      <JoinChallengesGpt />
+      <ListChallenges />
 
       <div className="relative flex w-full max-w-5xl flex-col items-center justify-center gap-12">
         <div className="relative flex flex-col items-center gap-6">
