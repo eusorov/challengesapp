@@ -54,7 +54,7 @@ export function Flownavbar() {
     <Navbar
       fluid
       rounded
-      className={`${showShadow ? "shadow-md" : ""} sticky top-0 z-10 w-full max-w-6xl bg-white dark:bg-gray-900`}
+      className={`${showShadow ? "shadow-md" : ""} sticky top-0 z-10 w-full max-w-6xl bg-gradient-to-r from-blue-500 to-green-500 text-white`}
     >
       <NavbarBrand
         as={Link}
@@ -85,6 +85,7 @@ export function Flownavbar() {
       </div>
       <NavbarCollapse>
         <NavbarLink
+          className="text-white"
           href={homeLink}
           active={activeLink === homeLink}
           onClick={() => handleLinkClick(homeLink)}
@@ -94,13 +95,25 @@ export function Flownavbar() {
         <NavbarLink
           as={Link}
           href="/about"
+          className="text-white"
           active={activeLink === "/about"}
           onClick={() => handleLinkClick("/about")}
         >
           About
         </NavbarLink>
+        <NavbarLink
+          as={Link}
+          href="/claude"
+          className="text-white"
+          active={activeLink === "/claude"}
+          onClick={() => handleLinkClick("/claude")}
+        >
+          Claude Page
+        </NavbarLink>
 
-        <NavbarLink href="#">Contact</NavbarLink>
+        <NavbarLink href="#" className="text-white">
+          Contact
+        </NavbarLink>
       </NavbarCollapse>
     </Navbar>
   );

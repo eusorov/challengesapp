@@ -9,7 +9,7 @@ export const JoinChallengesGpt = () => {
         <div className="md:col-span-7">
           <p className="text-sm font-medium text-gray-500">Challenge</p>
           <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Join the Fun of Creating Challenges
+            GPT: Join the Fun of Creating Challenges
           </h2>
           <p className="mt-4 text-lg text-gray-600">
             Unleash your competitive spirit by creating or joining challenges.
@@ -27,9 +27,9 @@ export const JoinChallengesGpt = () => {
                   stroke="currentColor"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M3 10h11M9 21V3m0 0L3 10m6-7l6 7"
                   />
                 </svg>
@@ -55,9 +55,9 @@ export const JoinChallengesGpt = () => {
                   stroke="currentColor"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M3 10h11M9 21V3m0 0L3 10m6-7l6 7"
                   />
                 </svg>
@@ -94,9 +94,9 @@ export const JoinChallengesGpt = () => {
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M9 5l7 7-7 7"
                 />
               </svg>
@@ -115,9 +115,9 @@ export const JoinChallengesGpt = () => {
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M3 10h11M9 21V3m0 0L3 10m6-7l6 7"
                 />
               </svg>

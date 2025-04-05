@@ -7,7 +7,7 @@ export const ListChallenges = () => {
       <div className="mb-8">
         <p className="text-sm font-medium text-gray-500">Tagline</p>
         <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Current challenges
+          GPT: Current challenges
         </h1>
         <p className="mt-2 text-lg text-gray-600">
           Join our exciting upcoming challenges and events!
